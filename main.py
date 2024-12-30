@@ -8,13 +8,13 @@ def roll():
     return roll
 # entering the amount of players and how many players are alowed to play the game
 while True:
-    players = input("Enter the number of players ( 2 - 4 ): ")
+    players = input("Enter the number of players ( 1 - 4 ): ")
     if players.isdigit():
         players = int(players)
-        if 2 <= players <= 4:
+        if 1 <= players <= 4:
             break
         else:
-            print("Must be between 2 - 4 players. ")
+            print("Must be between 1 - 4 players. ")
     else:
         print("Invalid, try again.")
 
